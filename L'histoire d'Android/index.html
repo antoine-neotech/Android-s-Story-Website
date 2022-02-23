@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+            <link rel = "icon" href = "https://www.pinclipart.com/picdir/big/566-5668875_android-10-logo-png-clipart.png" 
+        type = "image/x-icon">
+          
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>L'histoire d'Android par Antoine BOUCHET</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="/images/logo.png"  class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="#" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    
+                    <a href="#histoire" data-text="L'histoire d'Android">L'histoire d'Android</a>
+                </li>
+                <li>
+                    <a href="#utilisation" data-text="L'utilisation d'Android de nos jours">L'utilisation d'Android de nos jours</a>
+                </li>
+                <li>
+                    
+                    <a href="#ensavoirplus" data-text="En savoir plus">En savoir plus</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">Android, système d'exploitation aux 2,5 milliards d'utilisateurs</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fab fa-android"></i>
+            <p class="box-content">
+                L'histoire d'Android
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-mobile"></i>
+            <p class="box-content">
+                Son utilisation
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-plus"></i>
+            <p class="box-content">
+               En savoir plus
+            </p>
+        </div>
+  
+    </section>
+    <section id="histoire" class="histoire-container">
+        <h1 class="section-title">L'histoire d'Android</h1>
+        <div class="histoire">
+            <p>Android doit son nom à une startup spécialisée dans le développement d’applications mobiles rachetée par Google en août 2005, nom venant lui-même d'« androïde » qui désigne un robot construit à l'image d'un être humain. 
+                Le logiciel fut proposé gratuitement et laissé librement modifiable par les fabricants de téléphones mobiles, ce qui facilita son adoption. Le gPhone a été lancé en octobre 2008 aux États-Unis dans un partenariat de distribution exclusif entre Google et T-Mobile.
+                 Anticipant les annonces officielles, les marchés financiers se ruèrent massivement sur les actions de Google, les faisant monter jusqu’au pic historique de 724 dollars le 5 novembre 2007. Il existe aujourd’hui plus de 23 versions d’Android. 
+                 La dernière est Android 12 qui est sortie le 4 octobre 2021. <p>
+
+            <img src = /images/htc_dream.jpg class="phone">
+            <h3>Le HTC Dream, un des tous premiers appareils équipé d'Android</h3>
+         </div>
+    </section>
+    <section id="utilisation" class="utilisation-container">
+        <h1 class="section-title">L'utilisation d'Android de nos jours</h1>
+        <div class="utilisation">
+            <p>Android permet de contrôler le smartphone avec le toucher. Android comporte des fonctionnalités basiques comme un navigateur internet, la messagerie et le téléphone. Android comporte également un catalogue d’applications nommé Google Play Store. Google Play Store est le magasin en ligne de Google, qui remplace Android Market depuis le 6 mars 2012. Celui-ci permet de télécharger des applications, des livres, des films ou de la musique, qu'ils soient gratuits ou payants, avec la possibilité de les noter et de les commenter. En septembre 2011, il y avait plus de 520 000 applications sur l'Android Market, dont 65 % sont gratuites. Toutes les nouvelles applications créent de nouveaux besoins chez les consommateurs, qui aboutissent à l’évolution des appareils et d’Android. Il existe des téléphones Android pour tous les budgets, et Android compte à ce jour 2,5 milliards d’utilisateurs. Au fil des années et de l’évolution, Android a su s’adapter et se mettre à jour et il est aujourd’hui un système d’exploitation de référence.</p>
+            <div class="logops"><h5>Logo du Google Play Store</h5></div>
+            <div class="pix6"><h5>Google Pixel 6, smartphone Android</h5></div> 
+            <img src="/images/play.webp" class="play_store">
+        
+        <img src="/images/pixel6.jpg" class="pixel6">
+        
+
+        </div>
+    </section>
+    <section id="ensavoirplus" class="savoirplus-container">
+        <h1 class="section-title">En savoir plus</h1>
+        <div class="ensavoirplus">
+            <a class="links" href ="https://fr.wikipedia.org/wiki/Android#Histoire">Documentation supplémentaire sur wikipedia</a>
+            
+        <div class="iframe-container">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/ueBzyNsqVmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - Site SNT par Antoine BOUCHET</span>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
